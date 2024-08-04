@@ -1,0 +1,25 @@
+{
+    "services": [
+      {
+        "name": "laravel_app",
+        "port": 8000,
+        "checks": [
+          {
+            "http": "http://localhost:8000/health",
+            "interval": "10s"
+          }
+        ]
+      },
+      {
+        "name": "laravel_app_secondary",
+        "port": 8001,
+        "checks": [
+          {
+            "http": "http://localhost:8001/health",
+            "interval": "10s"
+          }
+        ]
+      }
+    ]
+  }
+  
